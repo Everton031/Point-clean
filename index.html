@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <title>Point Clean</title>
+</head>
+<body>
+  <!-- HEADER -->
+  <div class="bg-home">
+    <header>
+
+      <nav class="header-content container">
+        <div class="header-icons" data-aos="fade-down">
+          <a href="#">
+           <i class="fa-brands fa-instagram fa-2x"></i>   
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-facebook fa-2x"></i>   
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-tiktok fa-2x"></i>   
+          </a>
+        </div>
+
+        <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+          <img 
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="1500"
+            src="images/logopoint.png" 
+            alt="Logo point clean"
+          />
+        </div>
+
+        <div data-aos="fade-down">
+          <a class="header-button" href="#">
+            Agendar Serviços
+          </a>
+        </div>
+
+      </nav>
+
+      <main class="hero container" data-aos="fade-up" data-aos-delay="400">
+        <h1>Uma boa viagem é como um livro de contos, nunca se sabe qual será a próxima surpresa</h1>
+        <p>Horário de funcionamento: 09:00 ás 18:00</p>
+        <a 
+          href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!" 
+          class="button-contact" 
+          target="_blank"
+        >
+          Agendar Serviços
+        </a>
+      </main>
+
+    </header>
+
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="container about-content">
+      <div data-aos="zoom-in" data-aos-delay="100">
+        <img 
+          src="images/flayer.jpeg" 
+          alt="Imagem promocional"
+        />
+      </div>
+
+      <div 
+        class="about-description"
+        data-aos="zoom-out-left" data-aos-delay="250"
+      >
+        <h2>Point Clean: Seu Parceiro em Limpeza de Estofados</h2>
+        <p>Na Point Clean, entendemos o valor de um ambiente limpo e confortável. Especializada em limpeza de estofados, nossa missão é revitalizar seus móveis, trazendo vida nova para cada peça.
+
+          Com uma equipe dedicada e técnicas avançadas, garantimos resultados impecáveis ​​em cada serviço. Desde sofás e poltronas até tapetes e colchões, cuidamos de todos os detalhes para que você possa desfrutar de um ambiente fresco e higienizado.
+          
+          Na Point Clean, a qualidade e a satisfação do cliente são nossa prioridade. Confie em nós para transformar seus estofados, proporcionando-lhe um espaço limpo e convidativo para relaxar.
+          
+          Contate-nos hoje mesmo e descubra como a Point Clean pode elevar o conforto e a limpeza do seu ambiente!</p>
+        <p>Horário de funcionamento: <strong>09:00</strong> ás <strong>18:00</strong></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+
+  <section class="services">
+
+    <div class="services-content container">
+      <h2>Serviços</h2>
+      <p>Limpeza de sofá - Limpeza De Carpetes - Limpeza De Cadeiras - Limpeza De Estofados Em Geral
+      </p>
+    </div>
+
+    <section class="haircuts">
+
+      <div class="haircut" data-aos="fade-up" data-aos-delay="150">
+        <img
+          src="images/colchao.jpeg"
+          alt="limpeza de colchão"
+        />
+        <div class="haircut-info">
+          <strong>Limpeza De Colchões</strong>
+          <button>
+            A Partir de R$49
+          </button>
+        </div>
+      </div>
+
+      <div class="haircut" data-aos="fade-up" data-aos-delay="250">
+        <img
+          src="images/estofados.jpeg"
+          alt="Limpeza De Sofá"
+        />
+        <div class="haircut-info">
+          <strong>Limpeza De Sofás</strong>
+          <button>
+            A Partir de R$ 39
+          </button>
+        </div>
+      </div>
+
+      <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+        <img
+          src="images/banco.jpeg"
+          alt="Banco"
+        />
+        <div class="haircut-info">
+          <strong>Limpeza De Bancos</strong>
+          <button>
+            A Partir De R$ 39
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+  </section>
+
+  <!-- FORMULÁRIO DE AVALIAÇÃO -->
+  <div class="container-2">
+    <h2>Avalie nosso serviço</h2>
+    <form action="submit.php" method="post">
+        <label for="rating">Classificação:</label>
+        <input type="radio" name="rating" value="excelente" id="excellent"><label for="excellent">Excelente</label>
+        <input type="radio" name="rating" value="bom" id="good"><label for="good">Bom</label>
+        <input type="radio" name="rating" value="regular" id="regular"><label for="regular">Regular</label>
+        <input type="radio" name="rating" value="ruim" id="bad"><label for="bad">Ruim</label>
+        
+        <label for="comments">Comentários:</label>
+        <textarea name="comments" id="comments" placeholder="Deixe seus comentários aqui"></textarea>
+        
+        <input type="submit" value="Enviar">
+    </form>
+  </div>
+  <!-- FIM DO FORMULÁRIO DE AVALIAÇÃO -->
+
+  <!-- FOOTER -->
+
+  <div class="services">
+    <h2>Venha conhecer</h2>
+  </div>
+
+  <iframe 
+  width="100%"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938.3892976631386!2d-43.88586514020518!3d-19.816363517765215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa68554e27852e3%3A0xeb29263672b552a7!2sMy%20Mall%20Parque%20Cerrado!5e0!3m2!1spt-BR!2sbr!4v1709906104618!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+  
+
+  <footer class="footer">
+    <div class="footer-icons">
+      <a href="#">
+        <i class="fa-brands fa-instagram fa-2x"></i>   
+       </a>
+       <a href="#">
+         <i class="fa-brands fa-facebook fa-2x"></i>   
+       </a>
+       <a href="#">
+         <i class="fa-brands fa-tiktok fa-2x"></i>   
+       </a>
+    </div>
+
+    <div>
+      <img 
+        src="images/logopoint.png" 
+        alt="Logo point clean"
+      />
+    </div>
+
+    <p>Copyright 2023 | Point Clean - Todos direitos reservados.</p>
+    </footer>
+
+  <!-- Button Whatsapp -->
+
+  <a 
+   href="https://api.whatsapp.com/send?phone=5511000000000&text=Quero%20fazer%20um%20agendamento%20hoje!"
+   class="btn-whatsapp"
+   target="_blank"
+   data-aos="zoom-in-up" data-aos-delay="400"
+  >
+    <img src="images/logo-whats.png" alt="Botao whatsapp" />
+    <span class="tooltip-text">Agendar Limpeza</span>
+  </a>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
